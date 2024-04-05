@@ -10,71 +10,67 @@
  *    You should not have any public variables in this class. All fields must be private.
  */
 public class Passenger extends User {
-	
-	// BUSINESS, PERSONAL, etc.
-	private String accountType;
-    private String name;
-    private String email;
+    private String accountType;
+
+	public Passenger() {
+		super();
+	}
+
+	public Passenger(String accountType) {
+		super();
+		this.accountType = accountType;
+	}
+
+	public String getAccountType() {
+		return accountType;
+	}
+
+	public void setAccountType(String accountType) {
+		this.accountType = accountType;
+	}
+
+
+//*********************** OLD CODE  **************************** */
+	// // BUSINESS, PERSONAL, etc.
+	// private String accountType;
+    // private String name;
+    // private String email;
    
-    public Passenger() {
-        //super();
-    }
+    // public Passenger() {
+    //     //super();
+    // }
     
-    public Passenger(String accountType){
-        //super(name, email);
-        this.accountType = accountType;
-    }
-    public String getAccountType(){
-        return this.accountType;
-    }
+    // public Passenger(String accountType){
+    //     //super(name, email);
+    //     this.accountType = accountType;
+    // }
+    // public String getAccountType(){
+    //     return this.accountType;
+    // }
     
-    public void setAccountType(String accountType){
-        this.accountType = accountType;
-    }
-    
-    
-    //@override
-    //public String getName(){
-        //return name;
-        //return super.getName();
-    //}
-   
-    //@override
-    //public void setName(String name){
-        //this.name = name;
-        //super.setName(name);
-    //}
-    
-    //@override
-    //public String getEmail(){
-        //return email;
-        //return super.getEmail(email);
-    //}
-    
-   
-    //@Override
-    //public void setEmail(String email){
-        //super.setEmail(email);
+    // public void setAccountType(String accountType){
+    //     this.accountType = accountType;
+    // }
     
     
-    public String getName(){
-        return this.name;
-    }
+    // public String getName(){
+    //     return this.name;
+    // }
     
     
-    public void setName(String name){
-        this.name = name;
-    }
+    // public void setName(String name){
+    //     this.name = name;
+    // }
     
     
-    public String getEmail(){
-        return this.email;
-    }
+    // public String getEmail(){
+    //     return this.email;
+    // }
     
     
-    public void setEmail(String email){
-        this.email = email;
-    }
+    // public void setEmail(String email){
+    //     this.email = email;
+    // }
     
  
 

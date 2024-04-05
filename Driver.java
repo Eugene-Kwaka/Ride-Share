@@ -18,53 +18,74 @@
  */
 public class Driver extends User{
 
-	private Vehicle vehicle;
-    private String name;
-    private String email;
-   
-    // non-parameterized constructor
-    public Driver(){
-        //this.vehicle = vehicle;
-        //this.name = name;
-        //this.email = email;
-    }
-    
-    //parameterized constructor
-    public Driver(Vehicle vehicle){
-        //super(name, email);
-        this.vehicle = vehicle;
-    }
-    
-    public Vehicle getVehicle(){
-        return this.vehicle;
-    }
-    
-    public void setVehicle(Vehicle vehicle){
-        this.vehicle = vehicle;
-    }
-   
-    public String getName(){
-        return this.name;
-    }
-   
-    public void setName(String name){
-        this.name = name;
-    
-    }
-    
-    public String getEmail(){
-        return this.email;
-        
-    }
-    
-    public void setEmail(String email){
-        this.email = email;
-       
-    }
-    
-	public void drive(){
-		// drive the vehicle
-        vehicle.drive();
+    private Driveable vehicle;
+	
+	public Driver() {
+		super();
 	}
+
+	public Driver(Driveable vehicle) {
+		super();
+		this.vehicle = vehicle;
+	}
+
+	public void drive() {
+		this.vehicle.drive();
+	}
+
+	public Driveable getVehicle() {
+		return vehicle;
+	}
+
+	public void setVehicle(Driveable vehicle) {
+		this.vehicle = vehicle;
+	}
+
+
+//*********************** OLD CODE  **************************** */
+	// private Vehicle vehicle;
+    // private String name;
+    // private String email;
+   
+    // // non-parameterized constructor
+    // public Driver(){};
+    
+    // //parameterized constructor
+    // public Driver(Vehicle vehicle){
+    //     //super(name, email);
+    //     this.vehicle = vehicle;
+    // }
+    
+    // public Vehicle getVehicle(){
+    //     return this.vehicle;
+    // }
+    
+    // public void setVehicle(Vehicle vehicle){
+    //     this.vehicle = vehicle;
+    // }
+   
+    // public String getName(){
+    //     return this.name;
+    // }
+   
+    // public void setName(String name){
+    //     this.name = name;
+    
+    // }
+    
+    // public String getEmail(){
+    //     return this.email;
+        
+    // }
+    
+    // public void setEmail(String email){
+    //     this.email = email;
+       
+    // }
+    
+	// public void drive(){
+	// 	// drive the vehicle
+    //     vehicle.drive();
+	// }
 
 }
