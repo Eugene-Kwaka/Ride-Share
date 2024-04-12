@@ -22,6 +22,21 @@ public class Vehicle implements Driveable {
 	private String plateNumber;
 	private boolean inTransit;
     
+    public Vehicle() {
+        // super calls the Object class constructor
+		super();
+	}
+    
+    //vehicle constructor
+    public Vehicle(String year, String make, String model, String plateNumber, boolean inTransit) {
+		super();
+		this.year = year;
+		this.make = make;
+		this.model = model;
+		this.plateNumber = plateNumber;
+		this.inTransit = inTransit;
+	}
+    
     public String getYear(){
         return year;
     }
