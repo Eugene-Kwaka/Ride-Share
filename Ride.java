@@ -10,6 +10,7 @@ public class Ride {
 	private Passenger[] passengers;
 	private boolean completed;
 	
+	// Ride class constructor is using super() to call the Object class constructor
 	public Ride() {
 		super();
 	}
